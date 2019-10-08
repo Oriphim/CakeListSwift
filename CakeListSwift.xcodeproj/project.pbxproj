@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		BAB19DE5234C963C003EF42B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB19DE4234C963C003EF42B /* AppDelegate.swift */; };
-		BAB19DE7234C963C003EF42B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB19DE6234C963C003EF42B /* ViewController.swift */; };
-		BAB19DEA234C963C003EF42B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAB19DE8234C963C003EF42B /* Main.storyboard */; };
+		BAB19DE7234C963C003EF42B /* CakeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB19DE6234C963C003EF42B /* CakeListViewController.swift */; };
 		BAB19DEC234C963E003EF42B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAB19DEB234C963E003EF42B /* Assets.xcassets */; };
 		BAB19DEF234C963E003EF42B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAB19DED234C963E003EF42B /* LaunchScreen.storyboard */; };
 		BAB19DFA234C963E003EF42B /* CakeListSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB19DF9234C963E003EF42B /* CakeListSwiftTests.swift */; };
 		BAB19E05234C963E003EF42B /* CakeListSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB19E04234C963E003EF42B /* CakeListSwiftUITests.swift */; };
+		BAB19E13234C96E9003EF42B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAB19E12234C96E9003EF42B /* Main.storyboard */; };
+		BAB19E18234C9741003EF42B /* CakeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB19E17234C9741003EF42B /* CakeCell.swift */; };
+		BAB19E1B234C9753003EF42B /* Cake.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB19E1A234C9753003EF42B /* Cake.swift */; };
+		BAB19E1E234C98C2003EF42B /* CakeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB19E1D234C98C2003EF42B /* CakeListViewModel.swift */; };
+		BAB19E21234C9A0C003EF42B /* CakeLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB19E20234C9A0C003EF42B /* CakeLoader.swift */; };
+		BAB19E24234CA165003EF42B /* CakeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB19E23234CA165003EF42B /* CakeDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +41,7 @@
 /* Begin PBXFileReference section */
 		BAB19DE1234C963C003EF42B /* CakeListSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CakeListSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAB19DE4234C963C003EF42B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BAB19DE6234C963C003EF42B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BAB19DE9234C963C003EF42B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BAB19DE6234C963C003EF42B /* CakeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeListViewController.swift; sourceTree = "<group>"; };
 		BAB19DEB234C963E003EF42B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAB19DEE234C963E003EF42B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BAB19DF0234C963E003EF42B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +51,12 @@
 		BAB19E00234C963E003EF42B /* CakeListSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CakeListSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAB19E04234C963E003EF42B /* CakeListSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeListSwiftUITests.swift; sourceTree = "<group>"; };
 		BAB19E06234C963E003EF42B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAB19E12234C96E9003EF42B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		BAB19E17234C9741003EF42B /* CakeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CakeCell.swift; path = ../../../../CakeCell.swift; sourceTree = "<group>"; };
+		BAB19E1A234C9753003EF42B /* Cake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cake.swift; sourceTree = "<group>"; };
+		BAB19E1D234C98C2003EF42B /* CakeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeListViewModel.swift; sourceTree = "<group>"; };
+		BAB19E20234C9A0C003EF42B /* CakeLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeLoader.swift; sourceTree = "<group>"; };
+		BAB19E23234CA165003EF42B /* CakeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +107,13 @@
 		BAB19DE3234C963C003EF42B /* CakeListSwift */ = {
 			isa = PBXGroup;
 			children = (
+				BAB19E22234CA13F003EF42B /* Viewcontrollers */,
+				BAB19E1F234C99F4003EF42B /* Networking */,
+				BAB19E1C234C98A4003EF42B /* ViewModels */,
+				BAB19E19234C9745003EF42B /* Models */,
+				BAB19E14234C972A003EF42B /* Cells */,
 				BAB19DE4234C963C003EF42B /* AppDelegate.swift */,
-				BAB19DE6234C963C003EF42B /* ViewController.swift */,
-				BAB19DE8234C963C003EF42B /* Main.storyboard */,
+				BAB19E12234C96E9003EF42B /* Main.storyboard */,
 				BAB19DEB234C963E003EF42B /* Assets.xcassets */,
 				BAB19DED234C963E003EF42B /* LaunchScreen.storyboard */,
 				BAB19DF0234C963E003EF42B /* Info.plist */,
@@ -123,6 +137,47 @@
 				BAB19E06234C963E003EF42B /* Info.plist */,
 			);
 			path = CakeListSwiftUITests;
+			sourceTree = "<group>";
+		};
+		BAB19E14234C972A003EF42B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				BAB19E17234C9741003EF42B /* CakeCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		BAB19E19234C9745003EF42B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BAB19E1A234C9753003EF42B /* Cake.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BAB19E1C234C98A4003EF42B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				BAB19E1D234C98C2003EF42B /* CakeListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		BAB19E1F234C99F4003EF42B /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				BAB19E20234C9A0C003EF42B /* CakeLoader.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		BAB19E22234CA13F003EF42B /* Viewcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				BAB19DE6234C963C003EF42B /* CakeListViewController.swift */,
+				BAB19E23234CA165003EF42B /* CakeDetailViewController.swift */,
+			);
+			path = Viewcontrollers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +286,7 @@
 			files = (
 				BAB19DEF234C963E003EF42B /* LaunchScreen.storyboard in Resources */,
 				BAB19DEC234C963E003EF42B /* Assets.xcassets in Resources */,
-				BAB19DEA234C963C003EF42B /* Main.storyboard in Resources */,
+				BAB19E13234C96E9003EF42B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +311,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BAB19DE7234C963C003EF42B /* ViewController.swift in Sources */,
+				BAB19E21234C9A0C003EF42B /* CakeLoader.swift in Sources */,
+				BAB19E24234CA165003EF42B /* CakeDetailViewController.swift in Sources */,
+				BAB19DE7234C963C003EF42B /* CakeListViewController.swift in Sources */,
+				BAB19E1E234C98C2003EF42B /* CakeListViewModel.swift in Sources */,
+				BAB19E1B234C9753003EF42B /* Cake.swift in Sources */,
 				BAB19DE5234C963C003EF42B /* AppDelegate.swift in Sources */,
+				BAB19E18234C9741003EF42B /* CakeCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,14 +353,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		BAB19DE8234C963C003EF42B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BAB19DE9234C963C003EF42B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BAB19DED234C963E003EF42B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
