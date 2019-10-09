@@ -52,7 +52,7 @@
 		BAB19E04234C963E003EF42B /* CakeListSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeListSwiftUITests.swift; sourceTree = "<group>"; };
 		BAB19E06234C963E003EF42B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAB19E12234C96E9003EF42B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		BAB19E17234C9741003EF42B /* CakeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CakeCell.swift; path = ../../../../CakeCell.swift; sourceTree = "<group>"; };
+		BAB19E17234C9741003EF42B /* CakeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeCell.swift; sourceTree = "<group>"; };
 		BAB19E1A234C9753003EF42B /* Cake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cake.swift; sourceTree = "<group>"; };
 		BAB19E1D234C98C2003EF42B /* CakeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeListViewModel.swift; sourceTree = "<group>"; };
 		BAB19E20234C9A0C003EF42B /* CakeLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeLoader.swift; sourceTree = "<group>"; };
