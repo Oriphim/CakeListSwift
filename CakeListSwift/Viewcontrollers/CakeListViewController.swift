@@ -28,7 +28,7 @@ class CakeListViewController: UITableViewController {
             tableView.separatorStyle = .singleLine
             return 1
         } else {
-            displayEmptyTableMessage()
+            Empty()
             return 0
         }
     }
@@ -38,14 +38,13 @@ class CakeListViewController: UITableViewController {
         let cake = viewModel.cakeAtIndex(index: indexPath.row)
         cell.cake = cake
         viewModel.imageDataForCake(cake: cake) { (image) in
-            DispatchQueue.main.async { [weak self] in
-                let visibleIndexPaths = self?.tableView.indexPathsForVisibleRows
-                if (visibleIndexPaths?.contains(indexPath) ?? false) {
+            DispatchQueue.main.async { //Checks for cell re-use via index rather than visibility to prevent caching
+                let cellIndex = tableView.indexPath(for: cell)
+                if (cellIndex?.row == indexPath.row) {
                     cell.updateCellWithImage(image: image)
                 }
             }
         }
-        
         return cell
     }
     
@@ -80,20 +79,16 @@ class CakeListViewController: UITableViewController {
         }
     }
     
-    func displayEmptyTableMessage() {
+    func Empty() {
         let messageLabel = UILabel(frame: CGRect(x: 0, y: 0, width: self.view.bounds.size.width, height: self.view.bounds.size.height))
-        messageLabel.text = NSLocalizedString("emptyTable", comment: "Message Text")
-        messageLabel.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-        messageLabel.numberOfLines = 0
+        messageLabel.text = "No Cakes To Be Found 😰"
         messageLabel.textAlignment = .center
-        messageLabel.font = UIFont.systemFont(ofSize: 20)
+        messageLabel.font = UIFont.systemFont(ofSize: 17)
         messageLabel.sizeToFit()
         
         tableView.backgroundView = messageLabel
         tableView.separatorStyle = .none
     }
-
-
 
 }
 
