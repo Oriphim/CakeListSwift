@@ -14,7 +14,7 @@ struct CakeLoader {
     enum ImageDataError: Error {
         case wrongImageData
     }
-    
+    // Enums to cover web networking errors
     enum DownloadDataError: Error {
         case webResponseCodeError
         case dataError

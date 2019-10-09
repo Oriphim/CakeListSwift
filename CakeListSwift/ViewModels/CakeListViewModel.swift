@@ -68,9 +68,9 @@ class CakeListViewModel {
                     completionHandler(image)
                     
                 case .failure:
-                    let noImage = #imageLiteral(resourceName: "imageNotFound")
-                    self.cacheCakeImage(image: noImage, cake: cake)
-                    completionHandler(noImage)
+                    let imageNotfound = #imageLiteral(resourceName: "imageNotFound")
+                    self.cacheCakeImage(image: imageNotfound, cake: cake)
+                    completionHandler(imageNotfound)
                 }
             }
         }

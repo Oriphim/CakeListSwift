@@ -14,6 +14,7 @@ class CakeListViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Cake Recipes"
         refreshControl?.addTarget(self, action: #selector(downloadData), for: .valueChanged)
         downloadData()
     }
