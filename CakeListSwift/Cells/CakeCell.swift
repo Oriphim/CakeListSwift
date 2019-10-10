@@ -11,9 +11,9 @@ import UIKit
 
 class CakeCell: UITableViewCell {
     
-    @IBOutlet private weak var cakeImageView: UIImageView!
-    @IBOutlet private weak var titleLabel: UILabel!
-    @IBOutlet private weak var descriptionLabel: UILabel!
+    @IBOutlet private var cakeImageView: UIImageView!
+    @IBOutlet private var titleLabel: UILabel!
+    @IBOutlet private var descriptionLabel: UILabel!
     
     var cake: Cake? {
         didSet {

@@ -12,7 +12,6 @@
 		BAB19DEC234C963E003EF42B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAB19DEB234C963E003EF42B /* Assets.xcassets */; };
 		BAB19DEF234C963E003EF42B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAB19DED234C963E003EF42B /* LaunchScreen.storyboard */; };
 		BAB19DFA234C963E003EF42B /* CakeListSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB19DF9234C963E003EF42B /* CakeListSwiftTests.swift */; };
-		BAB19E05234C963E003EF42B /* CakeListSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB19E04234C963E003EF42B /* CakeListSwiftUITests.swift */; };
 		BAB19E13234C96E9003EF42B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAB19E12234C96E9003EF42B /* Main.storyboard */; };
 		BAB19E18234C9741003EF42B /* CakeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB19E17234C9741003EF42B /* CakeCell.swift */; };
 		BAB19E1B234C9753003EF42B /* Cake.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB19E1A234C9753003EF42B /* Cake.swift */; };
@@ -23,13 +22,6 @@
 
 /* Begin PBXContainerItemProxy section */
 		BAB19DF6234C963E003EF42B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BAB19DD9234C963C003EF42B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BAB19DE0234C963C003EF42B;
-			remoteInfo = CakeListSwift;
-		};
-		BAB19E01234C963E003EF42B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BAB19DD9234C963C003EF42B /* Project object */;
 			proxyType = 1;
@@ -48,9 +40,6 @@
 		BAB19DF5234C963E003EF42B /* CakeListSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CakeListSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAB19DF9234C963E003EF42B /* CakeListSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeListSwiftTests.swift; sourceTree = "<group>"; };
 		BAB19DFB234C963E003EF42B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BAB19E00234C963E003EF42B /* CakeListSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CakeListSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BAB19E04234C963E003EF42B /* CakeListSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeListSwiftUITests.swift; sourceTree = "<group>"; };
-		BAB19E06234C963E003EF42B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAB19E12234C96E9003EF42B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		BAB19E17234C9741003EF42B /* CakeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeCell.swift; sourceTree = "<group>"; };
 		BAB19E1A234C9753003EF42B /* Cake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cake.swift; sourceTree = "<group>"; };
@@ -74,13 +63,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BAB19DFD234C963E003EF42B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -89,7 +71,6 @@
 			children = (
 				BAB19DE3234C963C003EF42B /* CakeListSwift */,
 				BAB19DF8234C963E003EF42B /* CakeListSwiftTests */,
-				BAB19E03234C963E003EF42B /* CakeListSwiftUITests */,
 				BAB19DE2234C963C003EF42B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -99,7 +80,6 @@
 			children = (
 				BAB19DE1234C963C003EF42B /* CakeListSwift.app */,
 				BAB19DF5234C963E003EF42B /* CakeListSwiftTests.xctest */,
-				BAB19E00234C963E003EF42B /* CakeListSwiftUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,15 +108,6 @@
 				BAB19DFB234C963E003EF42B /* Info.plist */,
 			);
 			path = CakeListSwiftTests;
-			sourceTree = "<group>";
-		};
-		BAB19E03234C963E003EF42B /* CakeListSwiftUITests */ = {
-			isa = PBXGroup;
-			children = (
-				BAB19E04234C963E003EF42B /* CakeListSwiftUITests.swift */,
-				BAB19E06234C963E003EF42B /* Info.plist */,
-			);
-			path = CakeListSwiftUITests;
 			sourceTree = "<group>";
 		};
 		BAB19E14234C972A003EF42B /* Cells */ = {
@@ -218,24 +189,6 @@
 			productReference = BAB19DF5234C963E003EF42B /* CakeListSwiftTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		BAB19DFF234C963E003EF42B /* CakeListSwiftUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BAB19E0F234C963E003EF42B /* Build configuration list for PBXNativeTarget "CakeListSwiftUITests" */;
-			buildPhases = (
-				BAB19DFC234C963E003EF42B /* Sources */,
-				BAB19DFD234C963E003EF42B /* Frameworks */,
-				BAB19DFE234C963E003EF42B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BAB19E02234C963E003EF42B /* PBXTargetDependency */,
-			);
-			name = CakeListSwiftUITests;
-			productName = CakeListSwiftUITests;
-			productReference = BAB19E00234C963E003EF42B /* CakeListSwiftUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -250,10 +203,6 @@
 						CreatedOnToolsVersion = 10.3;
 					};
 					BAB19DF4234C963E003EF42B = {
-						CreatedOnToolsVersion = 10.3;
-						TestTargetID = BAB19DE0234C963C003EF42B;
-					};
-					BAB19DFF234C963E003EF42B = {
 						CreatedOnToolsVersion = 10.3;
 						TestTargetID = BAB19DE0234C963C003EF42B;
 					};
@@ -274,7 +223,6 @@
 			targets = (
 				BAB19DE0234C963C003EF42B /* CakeListSwift */,
 				BAB19DF4234C963E003EF42B /* CakeListSwiftTests */,
-				BAB19DFF234C963E003EF42B /* CakeListSwiftUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -291,13 +239,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		BAB19DF3234C963E003EF42B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BAB19DFE234C963E003EF42B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -329,14 +270,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BAB19DFC234C963E003EF42B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BAB19E05234C963E003EF42B /* CakeListSwiftUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -344,11 +277,6 @@
 			isa = PBXTargetDependency;
 			target = BAB19DE0234C963C003EF42B /* CakeListSwift */;
 			targetProxy = BAB19DF6234C963E003EF42B /* PBXContainerItemProxy */;
-		};
-		BAB19E02234C963E003EF42B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = BAB19DE0234C963C003EF42B /* CakeListSwift */;
-			targetProxy = BAB19E01234C963E003EF42B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -558,46 +486,6 @@
 			};
 			name = Release;
 		};
-		BAB19E10234C963E003EF42B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = P2A5V57GFD;
-				INFOPLIST_FILE = CakeListSwiftUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.2strong.stillineu.CakeListSwiftUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CakeListSwift;
-			};
-			name = Debug;
-		};
-		BAB19E11234C963E003EF42B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = P2A5V57GFD;
-				INFOPLIST_FILE = CakeListSwiftUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.2strong.stillineu.CakeListSwiftUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CakeListSwift;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -624,15 +512,6 @@
 			buildConfigurations = (
 				BAB19E0D234C963E003EF42B /* Debug */,
 				BAB19E0E234C963E003EF42B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BAB19E0F234C963E003EF42B /* Build configuration list for PBXNativeTarget "CakeListSwiftUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BAB19E10234C963E003EF42B /* Debug */,
-				BAB19E11234C963E003EF42B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

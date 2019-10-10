@@ -8,12 +8,12 @@
 
 import UIKit
 
-class CakeDetailViewController: UIViewController
-{
-    @IBOutlet weak var stackView: UIStackView!
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var descriptionLabel: UILabel!
-    @IBOutlet weak var cakeImage: UIImageView!
+class CakeDetailViewController: UIViewController {
+    
+    @IBOutlet var stackView: UIStackView!
+    @IBOutlet var titleLabel: UILabel!
+    @IBOutlet var descriptionLabel: UILabel!
+    @IBOutlet var cakeImage: UIImageView!
     
     var cake: Cake?
     var image: UIImage?

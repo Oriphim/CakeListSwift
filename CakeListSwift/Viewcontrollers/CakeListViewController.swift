@@ -10,7 +10,7 @@ import UIKit
 
 class CakeListViewController: UITableViewController {
     
-    var viewModel = CakeListViewModel()
+    let viewModel = CakeListViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +28,7 @@ class CakeListViewController: UITableViewController {
             tableView.separatorStyle = .singleLine
             return 1
         } else {
-            Empty()
+            showNoCakeError()
             return 0
         }
     }
@@ -55,7 +55,7 @@ class CakeListViewController: UITableViewController {
         }
         let cake = viewModel.cakeAtIndex(index: indexPath.row)
         vc.cake = cake
-        vc.image = viewModel.cakeImageCache(cake: cake)!
+        vc.image = viewModel.cakeImageCache(cake: cake)! //NOT FINE
         navigationController?.pushViewController(vc, animated: true)
     }
     
@@ -67,11 +67,11 @@ class CakeListViewController: UITableViewController {
                 self?.tableView.reloadData()
             }
         }) { (errorMessage) in
-            DispatchQueue.main.async { [weak self] in
+            DispatchQueue.main.async { [weak self] in 
                 self?.refreshControl?.endRefreshing()
                 self?.tableView.reloadData()
-                let messageTitle = NSLocalizedString("downloadErrorTitle", comment: "Message Title")
-                let messageConfirmationText = NSLocalizedString("downloadErrorConfirmation", comment: "Ok button")
+                let messageTitle = "Error"
+                let messageConfirmationText = "Error downloading data."
                 let ac = UIAlertController(title: messageTitle, message: errorMessage , preferredStyle: .alert)
                 ac.addAction(UIAlertAction(title: messageConfirmationText, style: .default, handler: nil))
                 self?.present(ac, animated: true)
@@ -79,7 +79,7 @@ class CakeListViewController: UITableViewController {
         }
     }
     
-    func Empty() {
+    func showNoCakeError() {
         let messageLabel = UILabel(frame: CGRect(x: 0, y: 0, width: self.view.bounds.size.width, height: self.view.bounds.size.height))
         messageLabel.text = "No Cakes To Be Found 😰"
         messageLabel.textAlignment = .center

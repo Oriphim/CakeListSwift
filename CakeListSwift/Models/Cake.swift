@@ -13,7 +13,7 @@ struct Cake: Codable {
     var desc: String
     var imageURL: String
     
-    enum CodingKeys:String, CodingKey {
+    private enum CodingKeys: String, CodingKey {
         case title
         case desc
         case imageURL = "image"

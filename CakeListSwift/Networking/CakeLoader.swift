@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-struct CakeLoader {
+class CakeLoader {
     
     enum ImageDataError: Error {
         case wrongImageData
@@ -20,7 +20,6 @@ struct CakeLoader {
         case dataError
         case serverError
     }
-    
     func startDataDownloadTaskWithURL(urlString: String,
                                       completionHandler: @escaping (Result<Data, DownloadDataError>) -> Void) {
         guard let url = URL(string: urlString) else {
@@ -32,11 +31,12 @@ struct CakeLoader {
                 return
             }
             
+            guard let returnData = data else {
+                completionHandler(.failure(.dataError))
+                return
+            }
+
             if (httpResponse.statusCode >= 200 && httpResponse.statusCode <= 300) {
-                guard let returnData = data else {
-                    completionHandler(.failure(.dataError))
-                    return
-                }
                 completionHandler(.success(returnData))
             } else {
                 completionHandler(.failure(.serverError))
@@ -46,7 +46,7 @@ struct CakeLoader {
     
     func downloadDataWithURL(urlString: String,
                              completionHandler: @escaping (Result<Data, DownloadDataError>) -> Void) {
-        startDataDownloadTaskWithURL(urlString: urlString) { result  in
+        startDataDownloadTaskWithURL(urlString: urlString) { result in
             completionHandler(result)
         }
     }
